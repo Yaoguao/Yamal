@@ -1,0 +1,447 @@
+@media only screen and (max-width: 1025px){
+    body{
+        background-color: #efefef;
+        margin: 0;
+    }
+
+    header{
+        width: 1000px;
+    }
+
+    .box_back{
+        width: 1000px;
+    }
+    .back_weather{
+        left: 750px;
+    }
+    .back_shine{
+        left: 750px;
+    }
+    .back_attention{
+        left: 750px;
+    }
+    .pod_main{
+        width: 1000px;
+        padding-left: 0px;
+    }
+    .PM_text{
+        width: 400px;
+    }
+    .PM_fact1 {
+        left: 450px;
+    }
+    .PM_fact2 {
+        left: 450px;
+    }
+    .PMTT{
+        font-size: 28px;
+    }
+    .tt1{
+        font-size: 12px;
+
+    }
+    .box_tt1{
+        width: 400px;
+    }
+    .mask{
+        padding-left: 25px;
+        width: 1024px;
+    }
+    .MS_back{
+        left: 570px;
+    }
+    .MS_back1{
+        left: 750px
+    }
+    .MS_fact1{
+        left: 830px;
+        top: -33px
+    }
+    .MS_icon1{
+        left:500px;
+    }
+    .MS_icon2{
+        display: none;
+    }
+    .visit_iamala_podblock{
+        width: 1024px;
+    }
+    .RM_box{
+        width: 1024px;
+    }
+    .RM_box_top{
+        padding-right: 0;
+        justify-content: space-around;
+    }
+    .afisha_block{
+        width: 1000px;
+    }
+
+    .MEDIA_NONE{
+        display: none;
+    }
+    .kol_a_box_top_text{
+        padding-left: 40px;
+    }
+    .kolorit_asr_TYR{
+        width: 1024px;
+    }
+    .visit_iamala_block{
+        width: 1024px;
+        padding-left: 25px;
+    }
+    .VIB_back{
+        left: 570px;
+    }
+    .VIB_back1{
+        left: 750px
+    }
+    .VIB_icon1{
+        left: 30px;
+    }
+    .VIB_icon2{
+        left: 900px;
+    }
+    .VIB_icon3{
+        left: 450px;
+    }
+    .VIB_icon4{
+        left: 500px;
+    }
+    .LI_li_hr{
+        width: 1000px;
+    }
+    .LI_img_line{
+        width: 1000px;
+    }
+    .AFIHSH_block_boxingggg{
+        width: 1000px;
+    }
+    .AFISH_box{
+        width: 730px;
+    }
+    .sir_Ni1 {
+        padding-left: 134px;
+    }
+    .sir_Ni2 {
+        padding-left: 134px;
+    }
+    .sir_Ni3 {
+        padding-right: 210px;
+    }
+    .footer_info{
+        width: 1124px;
+    }
+    .footer_liner_hr{
+        width: 900px;
+    }
+    .footer_konkt{
+        width: 1124px;
+    }
+    .carousel img{
+        width: calc(100% / 3);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        width: 760px;
+    }
+    .bx_langue{
+        display: none;
+    }
+    .BX_right{
+        justify-content: flex-end;
+    }
+    .box_back {
+        width: 760px;
+    }
+    .back_menu {
+        display: none;
+    }
+    .back_text {
+        left: 40px;
+    }
+    .back_text_2{
+        left: 40px;
+    }
+    .back_button{
+        left: 40px;
+    }
+    .back_weather{
+        left: 490px;
+    }
+    .back_shine{
+        left: 490px;
+    }
+    .back_attention{
+        left: 490px;
+    }
+    .pod_main{
+        width: 738px;
+    }
+    .rec1{
+        display: none;
+    }
+    .rec3{
+        display: none;
+    }
+    .rec2{
+        width: 258px;
+        height: 200px;
+        background-image: url(../img/Rectangle\ 8REC\ 2\ MED.png);
+    }
+    .rec4{
+        width: 258px;
+        height: 151px;
+    }
+    .PM_img{
+        width: 258px;
+    }
+    .visit_iamala_podblock{
+        width: 760px;
+    }
+    .mask{
+        width: 760px;
+        padding-bottom: 30px;
+    }
+    .MS_BLOCK_TEXT{
+        width: 360px;
+    }
+    .MS_text_title{
+        font-size: 30px;
+    }
+    .MS_text{
+        font-size: 14px;
+        width: 282px;
+    }
+    .MS_back{
+        width: 205px;
+        height: 294px;
+        left: 370px;
+    }
+    .MS_back_img{
+        height: 190px;
+        width: 165px;
+        border-radius: 7px;
+    }
+    .MS_back1{
+        width: 205px;
+        height: 294px;  
+        left: 520px
+    }
+    .MS_back_img1{
+        height: 190px;
+        width: 165px;
+        border-radius: 7px;
+    }
+    .MS_back_title{
+        font-size: 14px;
+    }
+    .MS_back_text{
+        font-size: 10px;
+    }
+    .MS_fact1{
+        left: 580px;
+    }
+    .MS_icon1{
+        left:300px;
+    }
+    .RM_top_emodji{
+        width: 324px;
+    }
+    .RM_backbut1{
+        width: 276px;
+    }
+    .RMtext{
+        font-size: 14px;
+    }
+    .RM_top_quetion{
+        width: 360px;
+    }
+    .quetion_text{
+        width: 360px;
+        margin-bottom: 44px;
+    }
+    .quetion_dexpt{
+        width: 360px;
+    }
+    .QD_icob1{
+        width: 44px;
+        height: 44px;
+    }
+    .QD_icob2{
+        width: 44px;
+        height: 44px;
+    }
+    .trackbacllineRM{
+        top: 192px;
+        width: 360px;
+    }
+    .QDBACK{
+        width: 120px;
+        padding-left: 5px;
+        padding-top: 0;
+    }
+    .TYR{
+        width: 768px;
+        padding: 0;
+    }
+    .TYR_rek{
+        width: 196px;
+        height: 300px;
+    }
+    .TYR_rek_images1{
+        height: 190px;
+        width: 165px;
+    }
+    .TYR_rek_images2{
+        height: 190px;
+        width: 165px;
+    }
+    .TYR_rek_images3{
+        height: 190px;
+        width: 165px;
+    }
+    .TYR_rek_images4{
+        height: 190px;
+        width: 165px;
+    }
+    .afisha_block{
+        width: 758px;
+    }
+    .afisha_title{
+        padding-left: 30px;
+    }
+    .afisha_events{
+        padding-left: 30px;
+    }
+    .AF_events_button{
+        width: 100px;
+    }
+    .rectangle_5{
+        width: 200px;
+    }
+    .AF_konsert_box_media{
+        display: none;
+    }
+    .AFIHSH_block_boxingggg{
+        width: 768px;
+    }
+    .AFISH_box{
+        width: 640px;
+    }
+    .sir_Ni1 {
+        padding-left: 104px;
+    }
+    .sir_Ni2 {
+        padding-left: 104px;
+    }
+    .sir_Ni3 {
+        padding-right: 210px;
+    }
+    .AFIHSH_block_boxingggg_media_none{
+        display: none;
+    }
+    .AFISH_box2{
+        width: 108px;
+    }
+    .kol_a_box_top{
+        width: 768px;
+        justify-content: space-around;
+    }
+    .kol_a_box_top_media_none{
+        display: none;
+    }
+    .kol_a_box_top_text{
+        padding-left: 15px;
+        width: 450px;
+    }
+    .kol_a_box_top_txtitle{
+        width: 400px;
+    }
+    .kol_abox_text{
+        width: 400px;
+    }
+    .kol_Rectangle1{
+        width: 258px;
+    }
+    .kol_a_box_top_img{
+        width: 258px;
+    }
+    .kolorit_asr_TYR{
+        width: 768px;
+    }
+    .MOGY{
+        width: 165px;
+        height: 165px;
+    }
+    .TYR_rek{
+        height: 230px;
+        width: 185px;
+        padding: 10px 10px 10px 10px;
+    }
+    .KLSRTR{
+        width: 165px;
+        height: 165px;
+    }
+    .visit_iamala_block{
+        width: 768px;
+    }
+    .VIB_icon2{
+        left:670px;
+    }
+    .VIB_icon3{
+        left: 240px;
+    }
+    .VIB_icon4{
+        left: 300px;
+    }
+    .VIB_back{
+        top:-30px;
+        left: 380px;
+        height: 233px;
+        width: 205px;
+        padding-bottom: 15px;
+    }
+    .VIB_back_img{
+        height: 165px;
+        width: 165px;
+    }
+    .VIB_back1{
+        top:90px;
+        left: 540px;
+        height: 233px;
+        width: 205px;
+        padding-bottom: 15px;
+    }
+    .VIB_back_img1{
+        height: 165px;
+        width: 165px;
+    }
+    .carousel img{
+        width: calc(100% / 2);
+    }
+    .LI_li_hr{
+        width: 738px;
+        height: 30px;
+    }
+    footer{
+        height: 268px;
+    }
+    .footer_info{
+        height: 140px;
+        width: 768px;
+        padding: 0 20px 0 20px;
+    }
+    .footer_liner_hr{
+        width: 750px;
+    }
+    .footer_konkt{
+        width: 768px;
+        padding: 0 20px 0 20px;
+    }
+    .footer_konkt_phone_email{
+        width: 315px;
+    }
+}

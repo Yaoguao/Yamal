@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ямал</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/media.css">
+    <!-- <link href="/dist/ui-components/slider/itc-slider.css" rel="stylesheet"> -->
+
+</head>
+<body>
+
+    <div id="arrowTop" hidden></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <header>
+        <div class="box_head">
+            <div class="BX_left">
+                <div class="bx_logo">
+                    <img src="/src/icons/Logo base.png" alt="">
+                </div>
+                <div class="BX_left_POD">
+                    <div class="bx_gps">
+                        <img src="/src/icons/gps.png" alt="">
+                        
+                    </div>
+        
+                    <div class="bx_city">
+                        <a href="#"><p class="bx_city_text">Санкт-Петербург</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bx_menu" >
+                <img src="/src/icons/menu.png" alt="">
+                <button id="myButton" onclick="myFunction()" class="bx_menu_text">Меню</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <button class="menu_button" id="theme_toggle_button" >Тема</button>
+                </div>
+                <!-- <a href="#"><p class="bx_menu_text" id="menu_background_color"> Меню</p></a> -->
+            </div>
+            <div class="BX_right">
+                <div class="bx_langue">
+                    <a href="#"><p class="bx_langue_text"> ENG</p></a>
+                </div>
+    
+                <div class="bx_eye">
+                    <img src="/src/icons/eye.png" alt="">
+                    <a href="#"><p  class="bx_eye_text">Версия для слабовидящих</p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box_back">
+            <div class="back_menu">
+                <div class="bmm">
+                    <a href="#"><img src="/src/icons/iconsMenu/item_menu1.png" alt=""></a>
+                </div>
+                <div class="bmm">
+                    <a href="#"><img src="/src/icons/iconsMenu/item_menu2.png" alt=""></a>
+                </div>
+                <div class="bmm">
+                    <a href="#"><img src="/src/icons/iconsMenu/separator3.png" alt=""></a>
+                </div>
+                <div class="bmm">
+                    <a href="#"><img src="/src/icons/iconsMenu/item_menu4.png" alt=""></a>
+                </div>
+                <div class="bmm">
+                    <a href="#"><img src="/src/icons/iconsMenu/item_menu5.png" alt=""></a>
+                    
+                </div>
+
+            </div>
+
+
+            <div class="back_weather">
+                <div class="BW_GPS_block">
+                    <div class="BWGPGPG">
+                        <div class="BW_gps"></div>
+                        <p class="BW_gps_text">Салехард</p>
+                    </div> 
+                    <p id="BW_gps_time">19:16</p>
+                </div>
+                <div class="BW_info">
+                    <div class="BW_wind">
+                        <img src="/src/icons/wind.png" alt="">
+                        <p class="BW_wind_text">4 м/c</p>
+
+                    </div>
+                    <div class="BW_cloud">
+                        <p class="BW_cloud_text">+13°C</p>
+                        <img src="/src/icons/cloud-sunnycloud.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="back_shine">
+                <div class="BS_sound">  
+                    <img src="/src/icons/sound.png" alt="">
+                    <p class="BS_sound_text">Северное сияние</p>
+                    <p class="BS_sound_data">15 сен.</p>
+                </div>
+                <div class="BS_level">  
+                    <p class="BS_level_text">7 уровень</p>
+                    <p class="BS_level_PDtext">из 10</p>
+                </div>
+                <div class="button_left"></div>
+                <div class="button_right"></div>  
+            </div>
+
+
+
+            <div class="back_attention">
+                <div class="BA_title">
+                    <p class="BA_title_text">Обратите внимание!</p>
+                </div>
+                <div class="BA_P">
+                    <p class="BA_P_text">В регионе есть территории, которые требуют специального прокуска для нахождения там.</p>
+                </div>
+                <div class="BA_HR">
+                    <img src="/src/icons/separatorattet.png" alt="">
+                </div>
+                <div class="BA_footer">
+                    <div>
+                        <img src="/src/icons/scanning.png" alt="">
+                    </div>
+                    <div class="BA_footer_">
+                        <p class="BA_footer_text">Пограничные зоны и особо охраняемые природные территории</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="back_text">
+                <p class="bk_text_top">Насладитесь гармонией арктики</p>
+            </div>
+            <div class="back_text_2">
+                <p class="bk_text_">Мы создали уникальную систему подбора маршрутов, которая учитывает множество скрытых факторов,
+                    чтобы насладиться отдыхом сполна.</p>
+            </div>
+            <div class="back_button">
+                <img src="/src/img/buttonopr.png" alt="">
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="pod_main">
+            <div class="PM_fact1">
+                <p class="PM_fact2_text">> 2293 видов</p>
+                <p class="PM_fact2_Podtext">животных и птиц</p>
+            </div>
+            <div class="PM_fact2">
+                <p class="PM_fact2_text">> 50 000</p>
+                <p class="PM_fact2_Podtext">ручьев, озер и рек</p>
+            </div>
+            <div class="PM_text">
+                <p class="PMTT">— Если вы пришелец, почему говорите, как северянин?!</p>
+                <p class="PMTT">— У многих планет есть север</p>
+                <br>
+                <p class="tt1">© «Доктор Кто» (2005)</p>
+                <br>
+                <div class="box_tt1">
+                    <p class="tt1">Равным образом, структура организации требует анализа кластеризации усилий. Каждый из нас понимает очевидную вещь: разбавленное изрядной долей эмпатии.</p>
+                </div>
+                <br>
+                <br>
+                <div class="PM_knopka"></div>
+                
+            </div>
+
+            <div class="PM_img">
+                <div class="pidor">
+                    <div class="rec1"></div>
+                    <div class="rec2"></div>
+                </div>
+                <div class="pidor">
+                    <div class="rec3"></div>
+                    <div class="rec4"></div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <div class="visit_iamala_podblock">
+        <div class="mask">
+            <div class="MS_BLOCK_TEXT">
+                <p class="MS_text_title">Скидки в заведениях Ямала</p>
+                <p class="MS_text">Зарегистрируйтесь и получите электонную карту гостя, дающую скидку в заведениях Ямало-Ненецкого АО.</p>
+                <a href="#">
+                    <div class="RM_div_marshrut">
+                        <p class="RM_div_marshrut_text">Создать личный кабинет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="MS_back">
+                <div class="MS_back_img"></div>
+                <p class="MS_back_title">Ресторан «Край земли»</p>
+                <p class="MS_back_text">г. Салехард</p>
+            </div>
+
+            <div class="MS_back1">   
+                <div class="MS_back_img1"></div>
+                <p class="MS_back_title">Ресторан «Край земли»</p>
+                <p class="MS_back_text">г. Салехард</p>
+            </div>
+            <div class="MS_fact1">
+                <p class="PM_fact2_text">> 658 мест</p>
+                <p class="PM_fact2_Podtext">со скидкой для гостей</p>
+            </div>
+            <div class="MS_icon1"></div>
+            <div class="MS_icon2"></div>
+        </div>
+    </div>
+    
+
+    <div class="rec_marh">
+        <div class="RM_box">
+            <div></div>
+            <div class="RM_box_top">
+                <div class="RM_top_emodji">
+                    <p class="RM_top_text">Природа и приключения</p>
+                    <a href="#">
+                        <div class="RM_backbut1">
+                            <img src="/src/img/recMath/emoji-happyicon1.png" alt="">
+                                <p class="RMtext">Я — авантюрист</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="RM_backbut1">
+                            <img src="/src/img/recMath/emoji-normalicon2.png" alt="">
+                            <p class="RMtext">Очень интересно</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="RM_backbut1">
+                            <img src="/src/img/recMath/emoji-normalicon3.png" alt="">
+                            <p class="RMtext">Только популярные места</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="RM_backbut1">
+                            <img src="/src/img/recMath/emoji-mediumicon4.png" alt="">
+                            <p class="RMtext">Стараюсь избегать</p>
+                        </div>
+                     </a>
+                    <div></div>
+                </div>
+
+                <div class="RM_top_quetion">
+                    <div class="quetion_title">
+                        <p class="PMTT">Рекомендованные машруты</p>
+                    </div>
+                    <div class="quetion_text">
+                        <p class="tt1">Ответьте на несколько вопросов, чтобы с высокой точностью посоветовать маршруты для путешествия по региону.</p>
+                    </div>
+                    <div class="quetion_dexpt">
+                        <div class="QD_icob1">
+                            <p class="qd_dex">1</p>
+                        </div>
+                        <div class="QD_icob1">
+                            <p class="qd_dex">2</p>
+                        </div>
+                        <div class="QD_icob2">
+                            <p class="qd_dex">3</p>
+                        </div>
+                        <div class="QD_icob2">
+                            <p class="qd_dex">4</p>
+                        </div>
+                        <div class="QD_icob2">
+                            <img src="/src/img/recMath/calendarbutr.png" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="QDBACK">
+                        <div>
+                            <img src="/src/img/recMath/button_iconbutdown.png" alt="">
+                        </div>
+                        <div class="tochka"></div>
+                    </div>
+                    <div class="trackbacllineRM"></div>
+                </div>
+
+            </div>
+
+            <div class="RM_box_down">
+                <div class="RM_box_down_text">
+                    <div class="RMMMM">
+                        <p class="RM_down_title">Больше ничего не удивляет?</p>
+                    </div>
+                    <div class="RMMMM">
+                        <p class="asdasd">Составьте свой индивидуальный маршрут по региону, а мы поможем получить максимум от путешествия.</p>
+                    
+                    </div>
+                    <div class="RM_div_marshrut">
+                        <button class="RM_div_marshrut_button" id="myButton" onclick="myFunction()">Индивидуальный маршрут</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <button class="menu_button" id="theme_toggle_button" >Тема</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="TYR">
+        <a href="#" class="TYR_link">
+            <div class="TYR_rek">
+                <div class="TYR_rek_images1"></div>
+                <br>
+                <p class="MS_back_title">Туры по Ямалу</p>
+                <p class="MS_back_text">3524 позиций</p>
+            </div>
+        </a>
+        <a href="#" class="TYR_link">
+            <div class="TYR_rek">
+                <div class="TYR_rek_images2"></div>
+                <br>
+                <p class="MS_back_title">Достопримечательности</p>
+                <p class="MS_back_text">365 объектов</p>
+            </div>
+        </a>
+        <a href="#" class="TYR_link">
+            <div class="TYR_rek">
+                <div class="TYR_rek_images3"></div>
+                <br>
+                <p class="MS_back_title">Этнографические парки</p>
+                <p class="MS_back_text">580 территорий</p>
+            </div>
+        </a>
+        <a href="#" class="TYR_link">
+            <div class="TYR_rek">
+                <div class="TYR_rek_images4"></div>
+                <br>
+                <p class="MS_back_title">Горнолыжные комплексы</p>
+                <p class="MS_back_text">158 объектов</p>
+            </div>
+        </a>
+
+        
+    </div>
+
+
+    <div class="afisha_block">
+        <div class="afisha_title">
+            <p class="AF_title_text">Афиша Ямала</p>
+            <div class="AF_title_block_city">
+                <img src="/src/img/afisha/arrow-square-downtitile.png" alt="">
+                <p class="AF_title_block_city_text">Все города</p>
+            </div>
+        </div>
+        <div class="afisha_events">
+            <a href="#" class="AF_link">
+                <div class="AF_events_button">
+                    <p class="AF_E_B_text">Все</p>
+                </div>
+            </a>
+            <a href="#" class="AF_link">
+                <div class="AF_events_button">
+                    <p class="AF_E_B_text">Праздник</p>
+                </div>
+            </a>
+            <a href="#" class="AF_link">
+                <div class="AF_events_button">
+                    <p class="AF_E_B_text">Фестиваль</p>
+                </div>
+            </a>
+            <a href="#" class="AF_link">
+                <div class="AF_events_button">
+                    <p class="AF_E_B_text">Кино</p>
+                </div>
+            </a>
+            <a href="#" class="AF_link">
+                <div class="AF_events_button">
+                    <p class="AF_E_B_text">Театр</p>
+                </div>
+            </a>
+            <a href="#" class="AF_link">
+                <div class="AF_events_button">
+                    <p class="AF_E_B_text">Концерт</p>
+                </div>
+            </a>
+        </div>
+        <div class="afisha_months">
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <div class="AF_month_block_disk"></div>
+                    <p class="AF_month_block_time">13</p>
+                    <p class="AF_month_block_day">пн</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <p class="AF_month_block_time">14</p>
+                    <p class="AF_month_block_day">ср</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+
+                    <p class="AF_month_block_time">15</p>
+                    <p class="AF_month_block_day">ср</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <div class="AF_month_block_disk"></div>
+                    <p class="AF_month_block_time">16</p>
+                    <p class="AF_month_block_day">чт</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <div class="AF_month_block_disk"></div>
+                    <p class="AF_month_block_time">17</p>
+                    <p class="AF_month_block_day">пт</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <div class="AF_month_block_disk"></div>
+                    <p class="AF_month_block_time">18</p>
+                    <p class="AF_month_block_day">сб</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <p class="AF_month_block_time">19</p>
+                    <p class="AF_month_block_day">сб</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <p class="AF_month_block_time">20</p>
+                    <p class="AF_month_block_day">ср</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <p class="AF_month_block_time">21</p>
+                    <p class="AF_month_block_day">чт</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <div class="AF_month_block_disk"></div>
+                    <p class="AF_month_block_time">22</p>
+                    <p class="AF_month_block_day">пт</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <p class="AF_month_block_time">23</p>
+                    <p class="AF_month_block_day">сб</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <div class="AF_month_block_disk"></div>
+                    <p class="AF_month_block_time">24</p>
+                    <p class="AF_month_block_day">вс</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <div class="AF_month_block_disk"></div>
+                    <p class="AF_month_block_time">25</p>
+                    <p class="AF_month_block_day">пн</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <p class="AF_month_block_time">26</p>
+                    <p class="AF_month_block_day">ср</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <p class="AF_month_block_time">27</p>
+                    <p class="AF_month_block_day">чт</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <div class="AF_month_block_disk"></div>
+                    <p class="AF_month_block_time">28</p>
+                    <p class="AF_month_block_day">пт</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <div class="AF_month_block_disk"></div>
+                    <p class="AF_month_block_time">29</p>
+                    <p class="AF_month_block_day">сб</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link">
+                <div class="AF_month_block">
+                    <p class="AF_month_block_time">30</p>
+                    <p class="AF_month_block_day">вс</p>
+                </div>
+            </a>
+            <a href="#" class="AF_month_link" class=".AFISHA_MEDIDA_NONE" >
+                <div class="AF_month_block" class=".AFISHA_MEDIDA_NONE" >
+                    <div class="AF_month_block_disk"></div>
+                    <p class="AF_month_block_time">1</p>
+                    <p class="AF_month_block_day">пн</p>
+                </div>
+            </a>
+        </div>
+        <div class="afisha_imgkoncert">
+            <div class="AF_konsert_box">
+                <div class="rectangle_1">
+                    <div class="rec_img_info">
+                        <p class="rectangle_text">Бесплатно</p>
+                    </div>
+                </div>
+                <p class="rectangle_title">День оленевода</p>
+                <p class="rectangle_text">Праздник</p>
+            </div>
+            <div class="AF_konsert_box">
+                <div class="rectangle_2">
+                    <div class="rec_img_info">
+                        <p class="rectangle_text">Бесплатно</p>
+                    </div>
+                </div>
+                <p class="rectangle_title">Зимняя рыбалка</p>
+                <p class="rectangle_text">Фестиваль</p>
+            </div>
+            <div class="AF_konsert_box">
+                <div class="rectangle_3">
+                    <div class="rec_img_info">
+                        <p class="rectangle_text">от 1200₽</p>
+                    </div>
+                </div>
+                <p class="rectangle_title">Dakooka</p>
+                <p class="rectangle_text">Концерт</p>
+            </div>
+            <div class="AF_konsert_box_media" class="AF_konsert_box">
+                <div class="rectangle_4">
+                    <div class="rec_img_info">
+                        <p class="rectangle_text">от 250₽</p>
+                    </div>
+                </div>
+                <p class="rectangle_title">Главный герой</p>
+                <p class="rectangle_text">Кино</p>
+            </div>
+            <div class="MEDIA_NONE" class="AF_konsert_box" >
+                <div class="rectangle_5">
+                    <div class="rec_img_info">
+                        <p class="rectangle_text">от 250₽</p>
+                    </div>
+                </div>
+                <p class="rectangle_title">Небесная команда</p>
+                <p class="rectangle_text">Кино</p>
+            </div>
+        </div>
+
+        
+        <div class="AFIHSH_block_boxingggg">
+            <div class="AFISH_box">
+                <div class="sir_Ni">
+                    <div class="sir_Ni1">
+                        <div class="sir_Ni2">
+                            <div class="sir_Ni3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="v_gostyah">
+                    <div class="v_gostyah_text_titl">
+                        <p class="AF_title_text">В гостях у Сэр Ли</p>
+                    </div>
+                    <div class="v_gostyah_text">
+                        <p class="MS_text">1 ноября 12:00</p>
+                    </div>
+                    <div class="v_gostyah_Podtext">
+                        <p class="V_G_zalupa">Этнографический парк «Кочевник»</p>
+                    </div>
+                    <div class="button_gost">
+                        <div class="rec_img_info">
+                            <p class="rectangle_text">Бесплатно</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="AFISH_box2">
+
+            </div>
+            <div class="AFIHSH_block_boxingggg_media_none" class="LI_img_line_right">
+                <img src="/src/img/LineImg/arrow-right.png" alt="">
+            </div>
+        </div>
+        <div class="AB_BACK_foo"></div>
+    </div>
+
+    <div class="kolorit_asr">
+            <div class="kol_a_box_top">
+                <div class="kol_a_box_top_text">
+                    <div class="kol_a_box_top_txtitle">
+                        <p class="PMTT">Местный колорит</p>
+                    </div>
+                    <div class="kol_abox_text">
+                        <p class="tt1">Равным образом, структура организации требует анализа кластеризации усилий. Каждый из нас понимает.</p>
+                    </div>
+                    <div class="QT_buttonS_kol">
+                        <p>Магазин сувениров</p>
+                    </div>
+                </div>
+                <div class="kol_a_box_top_img">
+                    <div class="kol_Rectangle1">
+                        <div class="kol_a_box_top_img_info">
+                            <p class="PM_fact2_text">22 093 позиций</p>
+                            <p class="PM_fact2_Podtext">народного творчества</p>
+                        </div>
+                    </div>
+                    <div class=".kol_a_box_top_media_none" class="kol_Rectangle2"></div>
+                </div>
+
+            </div>
+            <div class="kolorit_asr_TYR">
+                <a href="#" class="TYR_link">
+                    <div class="TYR_rek">
+                        <div class="KLSRTR"><img class="MOGY" src="/src/img/kolorit/Item 01 11.png" alt=""></div>
+                        <br>
+                        <p class="MS_back_title">Юла</p>
+                        <p class="MS_back_text">150₽</p>
+                    </div>
+                </a>
+                <a href="#" class="TYR_link">
+                    <div class="TYR_rek">
+                        <div class="KLSRTR"><img class="MOGY" src="/src/img/kolorit/Item 01 12.png" alt=""></div>
+                        <br>
+                        <p class="MS_back_title">Брошь «Писец»</p>
+                        <p class="MS_back_text">325₽</p>
+                    </div>
+                </a>
+                <a href="#" class="TYR_link">
+                    <div class="TYR_rek">
+                        <div class="KLSRTR"><img class="MOGY" src="/src/img/kolorit/Item 01 13.png" alt=""></div>
+                        <br>
+                        <p class="MS_back_title">Брелок «Бубен-шаман»</p>
+                        <p class="MS_back_text">350₽</p>
+                    </div>
+                </a>
+                <a href="#" class="TYR_link">
+                    <div class="TYR_rek">
+                        <div class="KLSRTR"><img class="MOGY" src="/src/img/kolorit/Item 01 14.png" alt=""></div>
+                        <br>
+                        <p class="MS_back_title">Композиция «Охота»</p>
+                        <p class="MS_back_text">3500₽</p>
+                    </div>
+                </a>
+                
+            </div>
+
+    </div>
+
+    <div class="visit_iamala_podblock">
+        <div class="visit_iamala_block">
+            <p class="VIB_title">Визит Ямал</p>
+            <br>
+            <p class="VIB_text">Публикуем лучшие фотографии по хештегу <span class="colortext">#visityamal</span> из Instagram</p>
+            <a href="#">
+                <div class="RM_div_marshrut">
+                    <p class="RM_div_marshrut_text">Перейти в Instagram</p>
+                </div>
+            </a>
+    
+            <div class="VIB_back">
+                <div class="VIB_back_img"></div>
+                <div class="messenjer_instVIB">
+                    <div class="mes_IVIB">
+                        <img src="/src/img/visit_iamal/heartserd.png" alt="">
+                        <p class="mes_IVIB_text">135</p>
+                    </div>
+                    <div class="mes_IVIB">
+                        <img src="/src/img/visit_iamal/messagesmessenjer.png" alt="">
+                        <p class="mes_IVIB_text">3</p>
+                    </div>
+
+                </div>
+            </div>
+    
+            <div class="VIB_back1">   
+                <div class="VIB_back_img1"></div>
+                <div class="messenjer_instVIB">
+                    <div class="mes_IVIB">
+                        <img src="/src/img/visit_iamal/heartserd.png" alt="">
+                        <p class="mes_IVIB_text">365</p>
+                    </div>
+                    <div class="mes_IVIB">
+                        <img src="/src/img/visit_iamal/messagesmessenjer.png" alt="">
+                        <p class="mes_IVIB_text">56</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="VIB_icon1"></div>
+            <div class="VIB_icon2">
+                <img src="/src/img/visit_iamal/camera2.png" alt="">
+            </div>
+            <div class="VIB_icon3">
+                <img src="/src/img/visit_iamal/sound1.png" alt="">
+            </div>
+            <div class="VIB_icon4">
+                <img src="/src/img/visit_iamal/video-square3.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="liner_images">
+        <div class="container_la">
+            <div class="wrapper">
+                <button class="la-arrow-left" id="left">
+                    <img src="/src/img/LineImg/arrow-left.png" alt="">
+                </button>
+                <div class="carousel">
+                    <img src="/src/img/LineImg/Rectangle 411.png" alt="">
+                    <img src="/src/img/LineImg/Rectangle 442.png" alt="">
+                    <img src="/src/img/LineImg/Rectangle 433.png" alt="">
+                    <img src="/src/img/LineImg/Rectangle 424.png" alt="">
+                    <img src="/src/img/LineImg/Rectangle 411.png" alt="">
+                    <img src="/src/img/LineImg/Rectangle 442.png" alt="">
+                    <img src="/src/img/LineImg/Rectangle 433.png" alt="">
+                    <img src="/src/img/LineImg/Rectangle 424.png" alt="">
+                </div>
+                <button class="la-arrow-right" id="rigth">
+                    <img src="/src/img/LineImg/arrow-right.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="LI_li_hr">
+            <div class="LINER_HR">
+                <div class="LINER_HR_SCROLL"></div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <footer>
+        <div class="footer_info">
+            <div class="footer_info_block">
+                <div class="footer_icon"></div>
+                <div class="footer_backtext">
+                    <p class="footer_jopa">Партнеры</p>
+                </div>
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_text">
+                    <p class="footer_text_parag">О Ямале</p>
+                    <p class="footer_text_parag">Чем заняться</p>
+                </div>
+                <div class="footer_backtext">
+                    <p class="footer_jopa">Ямал Ири</p>
+                </div>
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_text">
+                    <p class="footer_text_parag">Блог</p>
+                    <p class="footer_text_parag">Экскурсии</p>
+                </div>
+                <div class="footer_backtext">
+                    <p class="footer_jopa">День Оленевода</p>
+                </div>
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_text">
+                    <p class="footer_text_parag">Афиша</p>
+                    <p class="footer_text_parag">Обработка данных</p>
+                </div>
+                <div class="footer_backtext">
+                    <p class="footer_jopa">Культура Ямала</p>
+                </div>
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_text">
+                    <p class="footer_text_parag">Планирование поездки</p>
+                    <a href="/TYR-htmlcss/TYRindex.html"><p class="footer_text_parag">Еда Ямала</p></a>
+                </div>
+                <div class="footer_backtext">
+                    <p class="footer_jopa">Восхождение на гору Рай-Из</p>
+                </div>  
+            </div>
+        </div>
+        <div class="footer_liner">
+            <div class="footer_liner_hr"></div>
+        </div>
+        <div class="footer_konkt">
+            <div class="footer_konkt_web">
+                <img src="/src/img/footer/instagram.png" alt="">
+                <img src="/src/img/footer/facebook.png" alt="">
+                <img src="/src/img/footer/vk.png" alt="">
+                <img src="/src/img/footer/frame.png" alt="">
+                <img src="/src/img/footer/youtube.png" alt="">
+
+            </div>
+            <div class="footer_konkt_phone_email">
+                <p class="footer_konkt_phone_text">+7 (349) 224-49-49</p>
+                <p class="footer_konkt_text_email">info@visityamal.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- <script src="/dist/ui-components/slider/itc-slider.js" defer></script> -->
+    <script src="/src/js/scripts.js" defer></script>
+</body>
+</html>
