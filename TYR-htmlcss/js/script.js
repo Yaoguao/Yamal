@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
       function updateProducts() {
             const activeButtons = document.querySelectorAll('.buttonListMenu.active');
-            const activeIngredients = [...activeButtons].map(button => button.textContent); // мапа для проверки активности кнопки
+            const activeIngredients = [...activeButtons].map(button => button.textContent);
             const productElements = document.querySelectorAll('.product');
         
             if (activeButtons.length > 0) {
